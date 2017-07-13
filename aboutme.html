@@ -1,10 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bubbler+One|Sacramento" rel="stylesheet">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bubbler+One|Sacramento|Josefin+Slab" rel="stylesheet">
 <title> About meeee! </title>
 </head>
 <body style="background-color: #e6e6ff">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About me :)</a>
+  <a href="#">My favorite things</a>
+  <a href="#">My Girls who code experience!</a>
+  <a href="#">Places i've been</a>
+  <a href="#">Pictures</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 <center>
 <h1 style="font-size:500%;font-family: 'Sacramento', cursive;"> All about Alexis Chu!</h1>
 </center>
@@ -12,7 +86,7 @@
 <p style="font-size:140%;font-family: 'Bubbler One', sans-serif;"> My name is Alexis and I live in Burlingame, California. I am a senior at Burlingame high school. I love to travel with my family and visit new places all over the world! In addition to travel, I love to play music! I play the clarinet and I am apart of the high school band, marching band, and the pit for school musicals. Since band has taken up most of my time, I have made so many amazing friends because of it! </p>
 <center><img src="http://i66.tinypic.com/mv1d9h.jpg" alt="profile" style="width:400px;height:500px;"></center>
 
-<h2>My Girls Who Code experience!</h2>
+<h2style="font-family:'Josefin Slab', serif;">My Girls Who Code experience!</h2>
 <button type="button" onclick="myFunction2()">reflection 6/26 2017</button>
 <p id="GWC"></p>
 <button type="button" onclick="myFunction3()">reflection 6/27 2017</button>
@@ -32,7 +106,7 @@ function myFunction3() {
     document.getElementById("R3").innerHTML = "Based on what I have learned so far, Scratch and python are pretty similar! Scratch was mostly just clicking and dragging functions together to create movements and python was physically typing the code for the movements. Both were able to create the same product. Today we worked on drawing shapes using the turtle program. We spent the day debugging our python program, however, it was very confusing. It wasn't until the end where I started to get the hang of python. I had a lot of fun :)";
 }
 function myFunction4() {
-    document.getElementById("R3").innerHTML = "Today we learned about the core4, Functions, loops, conditionals";
+    document.getElementById("R4").innerHTML = "Today we learned about the core4, Functions, loops, conditionals, and variables. Functions are ";
 }
 </script>
 
@@ -112,3 +186,5 @@ style="width:250px;height:200px;"></th>
 style="width:150px;height:200px;"></th>
 </body>
 </html>
+
+
