@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bubbler+One|Sacramento|Josefin+Slab" rel="stylesheet">
+<title> About meeee! </title>
+</head>
+<body style="background-color: #e6e6ff">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://alexischu2000.github.io/portfolio/aboutme.html">Home</a>
+  <a href="https://alexischu2000.github.io/portfolio/aboutmeeeee.html">About me :)</a>
+  <a href="https://alexischu2000.github.io/portfolio/myfavoritethings.html">My favorite things</a>
+  <a href="#">My Girls who code experience!</a>
+  <a href="#">Places i've been</a>
+  <a href="#">Pictures</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<h2>Places I recommend to travel</h2>
+<figure>
+ <img src="https://www.dentons.com/-/media/images/website/background-images/offices/taipei/taipei_city_1900x1500px.jpg" alt="Taipei"
+style="width:180px;height:180px;"> 
+  <figcaption style="font-family: 'Bubbler One', sans-serif;">Taipei, Taiwan</figcaption>
+</figure>
+<figure>
+  <center><img src="http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-paris.jpg?itok=XH81cBH9" alt="Lourve"
+style="width:180px;height:180px;"></center>
+  <center><figcaption>Paris, France</figcaption></center>
+</figure>
+<figure>
+  <img src="http://i.huffpost.com/gen/1134677/images/o-COSTA-RICA-facebook.jpg" alt="CostaRica"
+  style="width:180px;height:180px;">
+  <figcaption>San Jose, Costa Rica</figcaption>
+</figure>
+</body>
+</html>
+
+
+
+
 
