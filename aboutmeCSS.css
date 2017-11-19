@@ -44,7 +44,8 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-<div id="mySidenav" class="sidenav">
+#mySidenav
+
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="https://alexischu2000.github.io/portfolio/aboutmeeeee.html">About me :)</a>
   <a href="https://alexischu2000.github.io/portfolio/myfavoritethings.html">My favorite things</a>
